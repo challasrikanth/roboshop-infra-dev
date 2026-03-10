@@ -49,7 +49,7 @@ resource "aws_instance" "redis" {
 
   tags = merge(
     {
-      Name = "${var.project}-${var.environment}-mongodb"
+      Name = "${var.project}-${var.environment}-redis"
     },
      local.common_tags
   )
@@ -98,14 +98,12 @@ resource "aws_instance" "mysql" {
 
   tags = merge(
     {
-      Name = "${var.project}-${var.environment}-mongodb"
+      Name = "${var.project}-${var.environment}-mysql"
     },
      local.common_tags
   )
 
 }
-
-
 
 resource "terraform_data" "mysql" {
   triggers_replace = [
