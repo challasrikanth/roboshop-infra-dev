@@ -14,7 +14,7 @@
       "Sid": "KMSDecrypt",
       "Effect": "Allow",
       "Action": "kms:Decrypt",
-      "Resource": "*"
+      "Resource": "arn:aws:kms:us-east-1:903669075061:alias/aws/ssm"
     }
   ]
 }
