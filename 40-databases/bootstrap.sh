@@ -1,6 +1,7 @@
 #!/bin/bash
 
 component=$1
+# "sudo sh /tmp/bootstrap.sh mongodb from here get the value to component=$1 $1 as input parameter" 
 environment=$2
 
 sudo dnf install ansible -y
