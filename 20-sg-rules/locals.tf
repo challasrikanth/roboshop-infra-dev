@@ -6,4 +6,5 @@ locals {
   user = data.aws_ssm_parameter.user_sg_id.value
   mysql = data.aws_ssm_parameter.mysql_sg_id.value
   rabbitmq = data.aws_ssm_parameter.rabbitmq_sg_id.value
-  }
+  backend_alb = data.aws_ssm_parameter.backend_alb_sg_id.value
+    }
