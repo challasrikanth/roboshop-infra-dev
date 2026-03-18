@@ -1,6 +1,6 @@
 data "aws_ami" "joindevops" {
-  most_recent      = true
-  owners           = ["973714476881"]
+  most_recent = true
+  owners      = ["973714476881"]
 
   filter {
     name   = "name"
@@ -29,12 +29,12 @@ variable "project" {
 }
 
 variable "zone_id" {
-    default = "Z0870789D4NHZLFW5FLZ"
-  
+  default = "Z0870789D4NHZLFW5FLZ"
+
 }
 
 variable "domain_name" {
-    default = "srikanthchalla.online"
-  
+  default = "srikanthchalla.online"
+
 }
 
