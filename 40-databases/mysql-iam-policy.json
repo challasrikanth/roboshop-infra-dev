@@ -7,13 +7,13 @@
       "Action": [
         "ssm:GetParameter"
       ],
-      "Resource": "arn:aws:ssm:us-east-1:903669075061:parameter/roboshop/${environment}/mysql_root_password"
+      "Resource": "arn:aws:ssm:us-east-1:762856491482:parameter/roboshop/${environment}/mysql_root_password"
     },
     {
       "Sid": "KMSDecrypt",
       "Effect": "Allow",
       "Action": "kms:Decrypt",
-      "Resource": "arn:aws:kms:us-east-1:903669075061:alias/aws/ssm"
+      "Resource": "arn:aws:kms:us-east-1:762856491482:alias/aws/ssm"
     }
   ]
 }
