@@ -87,7 +87,7 @@ resource "aws_security_group_rule" "catalogue_bastion" {
   security_group_id = local.catalogue 
 }
 
-resource "aws_security_group_rule" "catalogue_bastion" {
+resource "aws_security_group_rule" "catalogue_backend_alb" {
   type = "ingress"
   from_port = "8080"
   to_port = "8080"
